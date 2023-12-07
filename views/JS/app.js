@@ -294,7 +294,7 @@ function locationSpecific(){
         translatePage();
       }
   }
-  if(current_location == "/"){
+  if(current_location == "/" || current_location.includes("index")){
     activeTab = "home-link";
       getItems();
   }
