@@ -280,31 +280,31 @@ function createUser(){
 }
 
 function locationSpecific(){
-  if(current_location.includes("userMedia.html")){
+  if(current_location.includes("userMedia")){
     if(sessionStorage.getItem("current_user_name") === null) window.location.href = "/";
       activeTab = "user-link";
       userInfo = "<p><b>Username:</b> " + sessionStorage.getItem("current_user_name") + "<br/><b>User ID:</b> " + sessionStorage.getItem("current_user_id") + "</p>";
       $("#userInfo").append(userInfo);
       getUserItems();
   }
-  if(current_location.includes("update.html")){
+  if(current_location.includes("update")){
     activeTab = "user-link";
       getOneItem("#UpdateMediaDetails", sessionStorage.getItem("userItemID"));
       if(sessionStorage.getItem("targetLang") != null){
         translatePage();
       }
   }
-  if(current_location == ""){
+  if(current_location == "/"){
     activeTab = "home-link";
       getItems();
   }
-  if(current_location.includes("login.html")){
+  if(current_location.includes("login")){
     activeTab = "user-link";
     if(sessionStorage.getItem("targetLang") != null){
       translatePage();
     }
   }
-  if(current_location.includes("createUser.html")){
+  if(current_location.includes("createUser")){
     activeTab = "user-link";
     if(sessionStorage.getItem("targetLang") != null){
       translatePage();
