@@ -5,10 +5,6 @@
         "route": "/index.html"
       },
       {
-        "route": "/*",
-        "rewrite": "/index.html"
-      },
-      {
         "route": "/userMedia.html"
       },
       {
@@ -20,8 +16,5 @@
       {
         "route": "/update.html"
       }
-    ],
-    "navigationFallback": {
-      "rewrite": "index.html"
-    }
+    ]
   }
