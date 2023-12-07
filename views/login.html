@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../static/CSS/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../static/CSS/site.css">
+    <link rel="shortcut icon" href="../static/favicon.ico">
+    <script type="text/javascript" src="../static/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../static/js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script></head>
+
+    <script type="text/javascript" src="../static/js/app.js"></script>
+    <title>Media Share</title>
+</head>
+<body>
+    <div id="wrapper" class="d-flex flex-nowrap min-vh-100">
+        <div id="sidebar" class="d-flex flex-column flex-shrink-0 p-3 bg-dark min-vh-100 ">
+            <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+              <img src="https://cdn.pixabay.com/photo/2016/03/31/18/34/file-1294464_1280.png" width="auto" height="32" class="me-2">
+              <span class="fs-4">Media Share</span>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link text-white" id="home-link">
+                  <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" width="32" height="32" class="me-2">
+                  <span>Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="userMedia.html" class="nav-link text-white" id="user-link" style="display: none;">
+                  <img src="https://cdn-icons-png.flaticon.com/512/154/154368.png" width="32" height="32" class="me-2">
+                  <span>User Dashboard</span>
+                </a>
+              </li>
+            </ul>
+            <hr>
+            <div class="dropdown" id="langZone">
+              <a href="#" id="lang-toggle" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Globe_icon.svg/2048px-Globe_icon.svg.png" width="32" height="32" class="rounded-circle me-2"></span>
+                <strong id="langText"></strong>
+              </a>
+              <ul id="lang-links"class="dropdown-menu dropdown-menu-dark text-small shadow">
+              </ul>
+            </div>
+            <br/>
+            <div class="dropdown" id="loginZone">
+              <a href="#" id="login-link" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://shuoutreach.com/wp-content/uploads/2022/01/person-icon.png" width="32" height="32" class="rounded-circle me-2"></span>
+                <strong id="uNameText"></strong>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                <li><a class="dropdown-item" id="userLogout" href="#">Sign out</a></li>
+              </ul>
+            </div>
+        </div>
+        <div id="mainContent" class="d-flex flex-column">
+  <div class="row align-items-start">
+      <div class="col-2"  ></div>
+
+      <div class="col-8" style="text-align: left;border-bottom:1px solid #222222;">
+        <h4>User Login</h4>
+
+        <form style="font-size: 10pt;" id="loginForm">
+
+          <div class="mb-3">
+            <label for="uname" class="form-label">Username</label>
+            <input class="form-control" type="text" placeholder="Enter Username" id="uname" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="psw" class="form-label" class="form-label">Password</label>
+            <input class="form-control" type="password" placeholder="Enter Password" id="psw" required>
+          </div>
+
+          <button id="loginUser" type="button" class="btn btn-primary">Login</button><br/><br/>
+          <a id="createUserRedirect" href="create" type="button" class="btn btn-primary">Create new user</a><br/><br/>
+        </form>
+      </div>
+      <div class="col-2"  ></div>
+  </div>
+</div>
+</div>
+</body>
+</html>

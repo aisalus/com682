@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../static/CSS/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../static/CSS/site.css">
+    <link rel="shortcut icon" href="../static/favicon.ico">
+    <script type="text/javascript" src="../static/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../static/js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script></head>
+
+    <script type="text/javascript" src="../static/js/app.js"></script>
+    <title>Media Share</title>
+</head>
+<body>
+    <div id="wrapper" class="d-flex flex-nowrap min-vh-100">
+        <div id="sidebar" class="d-flex flex-column flex-shrink-0 p-3 bg-dark min-vh-100 ">
+            <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+              <img src="https://cdn.pixabay.com/photo/2016/03/31/18/34/file-1294464_1280.png" width="auto" height="32" class="me-2">
+              <span class="fs-4">Media Share</span>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link text-white" id="home-link">
+                  <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" width="32" height="32" class="me-2">
+                  <span>Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="userMedia.html" class="nav-link text-white" id="user-link" style="display: none;">
+                  <img src="https://cdn-icons-png.flaticon.com/512/154/154368.png" width="32" height="32" class="me-2">
+                  <span>User Dashboard</span>
+                </a>
+              </li>
+            </ul>
+            <hr>
+            <div class="dropdown" id="langZone">
+              <a href="#" id="lang-toggle" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Globe_icon.svg/2048px-Globe_icon.svg.png" width="32" height="32" class="rounded-circle me-2"></span>
+                <strong id="langText"></strong>
+              </a>
+              <ul id="lang-links"class="dropdown-menu dropdown-menu-dark text-small shadow">
+              </ul>
+            </div>
+            <br/>
+            <div class="dropdown" id="loginZone">
+              <a href="#" id="login-link" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://shuoutreach.com/wp-content/uploads/2022/01/person-icon.png" width="32" height="32" class="rounded-circle me-2"></span>
+                <strong id="uNameText"></strong>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                <li><a class="dropdown-item" id="userLogout" href="#">Sign out</a></li>
+              </ul>
+            </div>
+        </div>
+        <div id="mainContent" class="d-flex flex-column">
+<br/>
+  <div class="row">
+      <div class="col-3" style="margin-left:20px;">
+        <h2>You are updating:</h2>
+      </div>
+
+      <div class="col-9" style="text-align: left;" >
+      </div>
+  </div>
+
+  <div class="row" style="margin-left:20px;">
+    <div id="UpdateMediaDetails"></div>
+  </div>
+<br/>
+  <div class="row">
+    <div class="col-2" style="margin-left:20px;">
+      <h3>Update Media</h3>
+    </div>
+
+    <div class="col-7">
+      <form id="updateItemForm">
+        <div class="input-group">
+          <input type="file" class="form-control" id="UpFile">
+          <button type="button" id="subUpdateForm" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="col-2"></div>
+  </div>
+</div>
+</div>
+</body>
+</html>

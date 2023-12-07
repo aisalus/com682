@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Media Tracking{% endblock %}
+{% block content %}
+  <div class="row align-items-start">
+      <div class="col-2"  ></div>
+
+      <div class="col-8" style="text-align: left;border-bottom:1px solid #222222;">
+        <h4>Create new user</h4>
+
+        <form style="font-size: 10pt;" id="loginForm">
+
+          <div class="mb-3">
+            <label for="uname" class="form-label">Username</label>
+            <input class="form-control" type="text" placeholder="Enter Username" id="uname" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="psw" class="form-label" class="form-label">Password</label>
+            <input class="form-control" type="password" placeholder="Enter Password" id="psw" required>
+          </div>
+
+          <button id="createUser" type="button" class="btn btn-primary">Create</button><br/><br/>
+
+        </form>
+      </div>
+      <div class="col-2"  ></div>
+  </div>
+{% endblock %}
