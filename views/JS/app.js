@@ -290,7 +290,7 @@ function locationSpecific(){
   if(current_location.includes("update")){
     activeTab = "user-link";
       getOneItem("#UpdateMediaDetails", sessionStorage.getItem("userItemID"));
-      if(sessionStorage.getItem("targetLang") != null){
+      if(sessionStorage.getItem("targetLang") != ""){
         translatePage();
       }
   }
@@ -300,13 +300,13 @@ function locationSpecific(){
   }
   if(current_location.includes("login")){
     activeTab = "user-link";
-    if(sessionStorage.getItem("targetLang") != null){
+    if(sessionStorage.getItem("targetLang") != ""){
       translatePage();
     }
   }
   if(current_location.includes("createUser")){
     activeTab = "user-link";
-    if(sessionStorage.getItem("targetLang") != null){
+    if(sessionStorage.getItem("targetLang") != ""){
       translatePage();
     }
   }
