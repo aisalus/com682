@@ -1,0 +1,26 @@
+{
+    "trailingSlash": "never",
+    "routes": [
+      {
+        "route": "/index.html"
+      },
+      {
+        "route": "/userMedia.html"
+      },
+      {
+        "route": "/login.html"
+      },
+      {
+        "route": "/createUser.html"
+      },
+      {
+        "route": "/update.html"
+      }
+    ],
+    "navigationFallback": {
+      "rewrite": "index.html"
+    },
+    "mimeTypes": {
+      ".json": "text/json"
+    }
+  }
