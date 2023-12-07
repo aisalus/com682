@@ -16,5 +16,10 @@
       {
         "route": "/update.html"
       }
-    ]
+    ],
+    "mimeTypes": {
+      ".json": "text/json",
+      ".js": "text/javascript",
+      ".css": "text/css"
+    }
   }
